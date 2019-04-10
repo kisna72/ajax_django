@@ -1,4 +1,4 @@
-// Author : Krishna Regmi based on documentations provided by django here: https://docs.djangoproject.com/en/2.2/ref/csrf/
+//All code is based on documentations provided by django here: https://docs.djangoproject.com/en/2.2/ref/csrf/
 
 //This function gets cookie with a given name
 function getCookie(name) {
