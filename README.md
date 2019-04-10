@@ -6,5 +6,21 @@ A simple wrapper written on top of jquery to make making AJAX requests to Django
 
 How to Install
 ===============
+Download ajax_upload.js file and add it to the head section of your html file (or at the end of the body section of your html) after you add your jquery file.
 
-Add ajax_django.js to your html file. Make ajax calls without worrying about adding csrf tokens. 
+```
+<html>
+  <head>
+    <script src="jquery.js"></script>
+    <script src="ajax_upload.js"></script>
+  </head>
+  .
+  .
+  .
+```
+
+
+## Code inside ajax_upload.js file will 
+
+- Get cookie called `csrftoken` 
+- Add the cookie to the header `X-CSRFToken` every time an ajax call is made with jquery by utilizing beforeSend hook. 
